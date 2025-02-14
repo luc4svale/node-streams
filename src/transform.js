@@ -10,6 +10,8 @@ export class InverseNumberStream extends Transform  {
   }
 }
 
+/*
 new OneToHundredStream()
   .pipe(new InverseNumberStream())
   .pipe(new MultiplyByTenStream())
+*/
