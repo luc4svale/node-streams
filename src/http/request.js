@@ -1,6 +1,6 @@
 import { Readable } from 'node:stream'
-import { OneToHundredStream } from "./readable.js";
-import { MultiplyByTenStream } from './writable.js';
+import { OneToHundredStream } from "../readable.js";
+import { MultiplyByTenStream } from '../writable.js';
 
 
 async function request() {
@@ -10,7 +10,7 @@ async function request() {
     duplex: 'half'
   })
 
-  Readable.fromWeb(res.body).pipe(new MultiplyByTenStream)
+  Readable.fromWeb(res.body).pipe(process.stdout)
 }
 
 request()
