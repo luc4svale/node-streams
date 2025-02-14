@@ -1,7 +1,7 @@
 import { Writable } from 'node:stream'
 import { OneToHundredStream } from './readable.js'
 
-class MultiplyByTenStream extends Writable {
+export class MultiplyByTenStream extends Writable {
   _write(chunck, encoding, callback) {
     const result = Number(chunck.toString()) * 10
 
@@ -11,6 +11,6 @@ class MultiplyByTenStream extends Writable {
   }
 }
 
-new OneToHundredStream().pipe(new MultiplyByTenStream())
+// new OneToHundredStream().pipe(new MultiplyByTenStream())
 
 
