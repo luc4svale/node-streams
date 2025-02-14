@@ -1,0 +1,12 @@
+{
+  "name": "node-streams",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "dev": "node --watch ./src/fundamentals.js"
+  },
+  "author": "luc4svale",
+  "license": "ISC",
+  "description": "A project to learn and practice the fundamentals of Node.js streams"
+}
