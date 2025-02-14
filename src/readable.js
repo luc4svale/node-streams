@@ -1,6 +1,6 @@
 import { Readable} from 'node:stream'
 
-class OneToHundredStream extends Readable {
+export class OneToHundredStream extends Readable {
   index = 1
 
   _read() {
@@ -15,8 +15,10 @@ class OneToHundredStream extends Readable {
   }
 }
 
+/*
 const stream = new OneToHundredStream()
 stream.on('data', chunck => {
   console.log(chunck.toString())
 })
+*/
 

@@ -4,7 +4,6 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "dev": "node --watch ./src/fundamentals.js"
   },
   "author": "luc4svale",
   "license": "ISC",
